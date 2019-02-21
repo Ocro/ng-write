@@ -1,0 +1,15 @@
+.list-article {
+  width: 300px;
+}
+
+.list-article > div {
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.list-article > div:not(:last-child) {
+  border-bottom: 0;
+}

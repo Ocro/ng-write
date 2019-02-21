@@ -1,0 +1,7 @@
+<button routerLink="new-article">add article</button>
+<div class="list-article">
+  <div *ngFor="let article of articles | async" [routerLink]="['details-article', article.id]">
+    {{ article.title }}
+  </div>
+</div>
+<pre *ngIf="!(articles | async)">loading articles...</pre>

@@ -1,0 +1,8 @@
+<div *ngIf="article | async as article; else loading">
+  {{ article.title }}
+  {{ article.postedAt }}
+  {{ article.content }}
+</div>
+<ng-template #loading>
+  Loading stuff...
+</ng-template>
